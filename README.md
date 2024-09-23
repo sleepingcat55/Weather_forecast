@@ -15,6 +15,8 @@ You need Ruby, and you need to have theses gems installed (or, to install) :
 - colorized
 - json
 
+To Launch the software, write in a Terminal : ./Weather_forecast.rb
+
 # Credits :
 I used :
 - the free API of : https://open-meteo.com/
