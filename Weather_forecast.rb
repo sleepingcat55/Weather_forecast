@@ -240,12 +240,12 @@ f.button("Get your weather forecast now !!!".light_red) {
 
     elsif(forecast_24.checked?)
       f.table(
-        [%w[---------Date/Time--------- ---------Weather_code--------- Temperatures(°C) Humidity(%) Wind_speed(km/h) Wind_direction(°) Precipitation_probability(%) Snowfall].map{|h| h.light_magenta}] + # Make the header a different color
+        [%w[---------Date/Time--------- ---------Weather_code--------- Temperatures(°C) Humidity(%) Wind_speed(km/h) Wind_direction(°) Precipitation_probability(%) Snowfall].map{|h| h.light_magenta}] +
         24.times.collect{|x| [extract_hourly_time[x], wmo_trad[x], extract_temp_2m[x], extract_humidity_2m[x], extract_wind_80m[x], wd_dir[x], precipitation_proba[x], snow[x]]})
 
     elsif(forecast_48.checked?)
       f.table(
-        [%w[---------Date/Time--------- ---------Weather_code--------- Temperatures(°C) Humidity(%) Wind_speed(km/h) Wind_direction(°) Precipitation_probability(%) Snowfall].map{|h| h.light_magenta}] + # Make the header a different color
+        [%w[---------Date/Time--------- ---------Weather_code--------- Temperatures(°C) Humidity(%) Wind_speed(km/h) Wind_direction(°) Precipitation_probability(%) Snowfall].map{|h| h.light_magenta}] +
         48.times.collect{|x| [extract_hourly_time[x], wmo_trad[x], extract_temp_2m[x], extract_humidity_2m[x], extract_wind_80m[x], wd_dir[x], precipitation_proba[x], snow[x]]})
 
     elsif(curves_view.checked?)
@@ -258,7 +258,7 @@ f.button("Get your weather forecast now !!!".light_red) {
 
     else
       f.table(
-        [%w[---------Date/Time--------- ---------Weather_code--------- Temperatures(°C) Humidity(%) Wind_speed(km/h) Wind_direction(°) Precipitation_probability(%) Snowfall].map{|h| h.light_magenta}] + # Make the header a different color
+        [%w[---------Date/Time--------- ---------Weather_code--------- Temperatures(°C) Humidity(%) Wind_speed(km/h) Wind_direction(°) Precipitation_probability(%) Snowfall].map{|h| h.light_magenta}] + 
         extract_hourly_time.count.times.collect{|x| [extract_hourly_time[x], wmo_trad[x], extract_temp_2m[x], extract_humidity_2m[x], extract_wind_80m[x], wd_dir[x], precipitation_proba[x], snow[x]]})
     end
 
