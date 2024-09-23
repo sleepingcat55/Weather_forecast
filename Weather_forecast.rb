@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # https://open-meteo.com/
-# https://open-meteo.com/en/docs/geocoding-api
+# https://open-meteo.com/en/docs/geocoding-api  
 # https://github.com/zach-capalbo/flammarion
 
 require 'httparty'
